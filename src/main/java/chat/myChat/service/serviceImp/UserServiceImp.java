@@ -1,4 +1,4 @@
-package chat.myChat.service;
+package chat.myChat.service.serviceImp;
 
 
 import chat.myChat.dtos.request.UserDto;
@@ -6,6 +6,7 @@ import chat.myChat.dtos.response.UserResponse;
 import chat.myChat.enums.Status;
 import chat.myChat.model.User;
 import chat.myChat.repository.UserRepository;
+import chat.myChat.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImp implements UserService{
+public class UserServiceImp implements UserService {
 
     private final UserRepository userRepository;
 
