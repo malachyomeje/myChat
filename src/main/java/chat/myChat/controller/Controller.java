@@ -31,7 +31,6 @@ public class Controller {
         return userService.disconnectUser(nickName);
 
     }
-
     @GetMapping("/users")
     public List<UserDto> findAllConnectedUser() {
         return  userService.findAllConnectedUser();
