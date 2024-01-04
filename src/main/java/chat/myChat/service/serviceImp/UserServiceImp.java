@@ -53,7 +53,6 @@ public class UserServiceImp implements UserService {
         List<User> userList = userRepository.findAllByStatus(Status.ONLINE);
         List<UserDto> userDto = new ArrayList<>();
         for (User list : userList) {
-
             UserDto user = new UserDto();
             user.setStatus(Status.ONLINE);
             user.setNickName(list.getNickName());
