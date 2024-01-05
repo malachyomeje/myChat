@@ -3,6 +3,7 @@ package chat.myChat.service.serviceImp;
 
 import chat.myChat.model.ChatRoom;
 import chat.myChat.repository.ChatRoomRepository;
+import chat.myChat.service.ChatRoomService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +11,11 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class ChatRoomServiceImp {
+public class ChatRoomServiceImp implements ChatRoomService {
     private final ChatRoomRepository chatRoomRepository;
 
+
+    @Override
     public Optional<String> getChatRoomId(String senderId, String recipientId,Boolean createNewRoomIfNotExist){
 
 
