@@ -16,6 +16,7 @@ public class ChatMessageServiceImp implements ChatMessageService {
 
     private final ChatMessageRepository repository;
     private final ChatRoomService chatRoomService;
+@Override
 
     public ChatMessage save(ChatMessage chatMessage) {
         var chatId = chatRoomService
